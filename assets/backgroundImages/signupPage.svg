@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+    <g mask="url(&quot;#SvgjsMask1105&quot;)" fill="none">
+        <rect width="1440" height="560" x="0" y="0" fill="url(#SvgjsLinearGradient1106)"></rect>
+        <path d="M 0,123 C 57.6,169 172.8,340 288,353 C 403.2,366 460.8,149.8 576,188 C 691.2,226.2 748.8,533 864,544 C 979.2,555 1036.8,283.6 1152,243 C 1267.2,202.4 1382.4,321.4 1440,341L1440 560L0 560z" fill="#184a7e"></path>
+        <path d="M 0,401 C 96,335.4 288,54.6 480,73 C 672,91.4 768,457.6 960,493 C 1152,528.4 1344,298.6 1440,250L1440 560L0 560z" fill="#2264ab"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1105">
+            <rect width="1440" height="560" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1106">
+            <stop stop-color="#0e2a47" offset="0"></stop>
+            <stop stop-color="rgba(24, 180, 181, 1)" offset="1"></stop>
+        </linearGradient>
+    </defs>
+</svg>
