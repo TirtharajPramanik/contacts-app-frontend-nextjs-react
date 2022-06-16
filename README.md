@@ -26,7 +26,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ![login](demos/login.png)
 
-#### Sign Demo
+#### Signup Demo
 
 ![signup](demos/signup.png)
 
@@ -42,7 +42,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ![login form](demos/loginsmf.png)
 
-#### Sign Demo
+#### Signup Demo
 
 ![signup](demos/signupsm.png)
 
