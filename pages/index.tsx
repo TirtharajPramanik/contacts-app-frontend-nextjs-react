@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
-import LoginPage from './login';
+import HomePage from './home';
 
-const HomePage: NextPage = () => {
-	return <LoginPage />;
+const IndexPage: NextPage = () => {
+	return <HomePage />;
 };
 
-export default HomePage;
+export default IndexPage;

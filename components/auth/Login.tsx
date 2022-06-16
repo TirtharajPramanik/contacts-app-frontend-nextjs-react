@@ -51,7 +51,7 @@ export function Login() {
 				<br />
 				<input className={styles.submit} type='submit' name='submit' />
 			</form>
-			<Link href='/signup'>
+			<Link href='/signup' aria-label='to signup page'>
 				<a className={styles.link}>Sign Up</a>
 			</Link>
 		</div>

@@ -13,7 +13,7 @@ const SignupPage: NextPage = () => {
 				<div>
 					<h1 className={styles.title}>Contacts</h1>
 					<Image src={signupPage} alt='hero image' />
-					<Link href='#signup'>
+					<Link href='#signup' aria-label='to signup page'>
 						<a className={styles.link}>
 							<hr className={styles.line} />
 							<ArrowDownward className={styles.arrow} />
