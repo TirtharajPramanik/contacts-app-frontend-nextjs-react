@@ -1,0 +1,97 @@
+.container,
+.content,
+.toolbar,
+.profile,
+.contacts,
+.contactList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0;
+    height: calc(100vh - 3rem);
+    overflow: scroll;
+}
+
+.content,
+.profile,
+.contacts {
+    padding: 1rem;
+}
+
+.appbar {
+    top: 0;
+    background-color: var(--main-color);
+    height: 3rem;
+}
+
+.uname,
+.email,
+.bio {
+    font-style: italic;
+    font-weight: 100;
+    color: darkgrey;
+    font-family: 'Comfortaa', cursive;
+    margin-top: -2rem;
+    margin-left: 16rem;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.email,
+.bio {
+    color: gainsboro;
+    margin: 12px auto;
+    width: fit-content;
+}
+
+.bio {
+    margin: 0 auto;
+}
+
+.coverPic {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../assets/heroImages/loginPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appbarPic {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.appbarProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+.profilePic {
+    width: 10rem;
+    height: 10rem;
+    margin-top: -6rem;
+    margin-left: 4rem;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.profile,
+.contacts {
+    display: block;
+}
+
+.stack,
+.hist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: auto;
+    color: gray;
+}
+
+.hist {
+    width: fit-content;
+    margin: 0;
+    color: darkgray;
+}

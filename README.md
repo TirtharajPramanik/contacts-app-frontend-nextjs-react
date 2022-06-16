@@ -18,7 +18,10 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Demo Pictures
+
+### Desktop Demos
+
 
 #### Login Demo
 
@@ -27,3 +30,45 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 #### Sign Demo
 
 ![signup](demos/signup.png)
+
+#### Home Demo
+
+![home](demos/home.png)
+
+
+### Tablet Demos
+
+#### Login Demo
+
+![login](demos/loginmd.png)
+
+![login](demos/loginmdp.png)
+
+#### Sign Demo
+
+![signup](demos/signupmd.png)
+
+![signup](demos/signupmdp.png)
+
+#### Home Demo
+
+![home](demos/homemd.png)
+
+
+### Phone Demos
+
+#### Login Demo
+
+![login](demos/loginsm.png)
+
+![login form](demos/loginsmf.png)
+
+#### Sign Demo
+
+![signup](demos/signupsm.png)
+
+![signuap form](demos/signupsmf.png)
+
+#### Home Demo
+
+![home](demos/homesm.png)

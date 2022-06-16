@@ -51,7 +51,7 @@ const Signup = () => {
 				<br />
 				<input className={styles.submit} type='submit' name='submit' />
 			</form>
-			<Link href='/login'>
+			<Link href='/login' aria-label='to login page'>
 				<a className={styles.link}>Log In</a>
 			</Link>
 		</div>

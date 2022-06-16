@@ -17,7 +17,7 @@ const LoginPage: NextPage = () => {
 						src={loginPage}
 						alt='hero image'
 					/>
-					<Link href='#login'>
+					<Link href='#login' aria-label='to login page'>
 						<a className={styles.link}>
 							<hr className={styles.line} />
 							<ArrowDownward className={styles.arrow} />
