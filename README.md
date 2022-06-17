@@ -1,4 +1,4 @@
-##### This is a [Next.js](https://nextjs.org/) forntend Contacts app with SSR (Server Side Rendering) and material-ui.
+#### This is a [Next.js](https://nextjs.org/) forntend Contacts app with SSR (Server Side Rendering) and material-ui.
 
 ## Preview Image
 
