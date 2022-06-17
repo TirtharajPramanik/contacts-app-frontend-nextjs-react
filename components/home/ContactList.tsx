@@ -1,6 +1,5 @@
 import { Email, Message, PhoneMissed } from '@mui/icons-material';
 import {
-	Avatar,
 	ButtonGroup,
 	Divider,
 	IconButton,
@@ -10,9 +9,12 @@ import {
 	ListItemText,
 	Tooltip,
 	Typography,
-	useMediaQuery,
 } from '@mui/material';
+import Image from 'next/image';
+import { useContext } from 'react';
+import { context } from '../../context/context';
 import styles from '../../styles/Home.module.css';
+// import profilePic from '../../public/profilePic.jpeg';
 
 function ListText() {
 	return (
@@ -73,21 +75,24 @@ function MListText() {
 }
 
 function ContactItem() {
-	const match = useMediaQuery('(max-width:550px)');
+	const { down550 } = useContext(context);
 
 	return (
 		<>
 			<ListItem className={styles.contactList}>
 				<ListItemIcon>
-					<Avatar
-						className={styles.appbarPic}
-						src='/profilePic.jpeg'
-						alt='profile pic'
-						sx={{ width: '3rem', height: '3rem' }}
-					/>
+					<div className={styles.listAvatar}>
+						<Image
+							className={styles.profilePic}
+							src='/profilePic.jpeg'
+							alt='profile pic'
+							width={160}
+							height={160}
+						/>
+					</div>
 				</ListItemIcon>
-				{match ? <MListText /> : <ListText />}
-				<ButtonGroup sx={{ marginLeft: '1rem' }}>
+				{down550 ? <MListText /> : <ListText />}
+				<ButtonGroup>
 					<Tooltip title='send message'>
 						<IconButton aria-label='send message'>
 							<Message sx={{ color: 'lightgray' }} />
@@ -109,40 +114,11 @@ function ContactItem() {
 }
 
 const ContactList = () => {
-	return (
-		<>
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-			<ContactItem />
-		</>
-	);
+	let list = [];
+	for (let i = 0; i < 8; i++) {
+		list.push(<ContactItem key={i} />);
+	}
+	return <>{list}</>;
 };
 
 export default ContactList;

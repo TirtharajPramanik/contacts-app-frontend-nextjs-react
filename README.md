@@ -1,26 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) forntend Contacts app with SSR (Server Side Rendering) and material-ui.
 
-## Getting Started
+## Preview Image
 
-First, run the development server:
+#### Signup Demo
+
+![signup](demos/signup.png)
+
+#### Home Demo
+
+![home](demos/home.png)
+
+# Table of Content
+
+- [Table of Content](#table-of-content)
+  - [1. Folder Structures](#1-folder-structures)
+  - [2. Libraries & Frameworks](#2-libraries--frameworks)
+  - [3. Installation & Set Up](#3-installation--set-up)
+  - [4. Demo Pictures](#4-demo-pictures)
+    - [Desktop Demos](#desktop-demos)
+      - [Login Demo](#login-demo)
+      - [Signup Demo](#signup-demo-1)
+      - [Home Demo](#home-demo-1)
+    - [Phone Demos](#phone-demos)
+      - [Login Demo](#login-demo-1)
+      - [Signup Demo](#signup-demo-2)
+      - [Home Demo](#home-demo-2)
+
+## 1. Folder Structures
 
 ```bash
-npm run dev
-# or
-yarn dev
++---context
++---pages
++---components
+|   \---layout
+|   \---home
+|   \---auth
++---public
+|   \---assets
++---styles
+|   \---theme
++---utils
+```
+
+## 2. Libraries & Frameworks
+
+| Name                                                | Description                                                                                                               |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [NextJS](https://nextjs.org/)                       | The React Framework for Production.                                                                                       |
+| [ReactJS](https://reactjs.org/)                     | A JavaScript library for building user interfaces.                                                                        |
+| [ContextApi](https://reactjs.org/docs/context.html) | Context provides a way to pass data through the component tree without having to pass props down manually at every level. |
+| [Material Ui](https://mui.com)                      | Material UI is a library of React UI components that implements Google's Material Design.                                 |
+
+## 3. Installation & Set Up
+
+1. Install project dependencies
+
+```bash
+  yarn install or npm install
+```
+
+2. Start the development server
+
+```bash
+  yarn dev or npm run dev
+```
+
+3. Build for production
+
+```bash
+  yarn build or npm run build
+```
+
+4. Run production mode
+
+```bash
+  yarn start or npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 4. Demo Pictures
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Demo Pictures<br/><br/>
-
-### Desktop Demos<br/>
+### Desktop Demos
 
 #### Login Demo
 
@@ -34,7 +95,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ![home](demos/home.png)
 
-### Phone Demos<br/>
+### Phone Demos
 
 #### Login Demo
 

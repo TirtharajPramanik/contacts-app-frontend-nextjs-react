@@ -6,14 +6,16 @@ import {
 	ButtonGroup,
 	IconButton,
 	Divider,
-	Avatar,
 	Tooltip,
-	useMediaQuery,
 } from '@mui/material';
+import Image from 'next/image';
+import { useContext } from 'react';
+import { context } from '../../context/context';
 import styles from '../../styles/Home.module.css';
+// import profilePic from '../../public/profilePic.jpeg';
 
 function Appbar() {
-	const up700 = useMediaQuery('(min-width:700px)');
+	const { up700 } = useContext(context);
 
 	return (
 		<AppBar
@@ -26,12 +28,12 @@ function Appbar() {
 					<Typography variant='h5'>Contacts</Typography>
 					<ButtonGroup>
 						<Tooltip title='new contact'>
-							<IconButton aria-label='new contact'>
+							<IconButton aria-label='new contact' color='inherit'>
 								<Add />
 							</IconButton>
 						</Tooltip>
 						<Tooltip title='select multiple'>
-							<IconButton aria-label='select multiple'>
+							<IconButton aria-label='select multiple' color='inherit'>
 								<DynamicFeed />
 							</IconButton>
 						</Tooltip>
@@ -43,12 +45,18 @@ function Appbar() {
 						<div className={styles.content}>
 							<Typography variant='h5'>Profile</Typography>
 							<div className={styles.appbarProfile}>
-								<Typography variant='subtitle1'>Sanita Singh</Typography>
-								<Avatar
-									className={styles.appbarPic}
-									src='/profilePic.jpeg'
-									alt='profile pic'
-								/>
+								<Typography variant='subtitle1' sx={{ fontFamily: 'inherit' }}>
+									Sanita Singh
+								</Typography>
+								<div className={styles.appbarAvatar}>
+									<Image
+										className={styles.profilePic}
+										src='/profilePic.jpeg'
+										alt='profile pic'
+										width={160}
+										height={160}
+									/>
+								</div>
 							</div>
 						</div>
 					</>
@@ -57,33 +65,5 @@ function Appbar() {
 		</AppBar>
 	);
 }
-// function MAppbar() {
-// 	return (
-// 		<AppBar
-// 			className={styles.appbar}
-// 			variant='outlined'
-// 			elevation={0}
-// 			position='sticky'>
-// 			<Toolbar className={styles.container} variant='dense'>
-// 				<div className={styles.content}>
-// 					<Typography variant='h5'>Contacts</Typography>
-// 					<ButtonGroup>
-// 						<IconButton>
-// 							<Add />
-// 						</IconButton>
-// 						<IconButton>
-// 							<DynamicFeed />
-// 						</IconButton>
-// 					</ButtonGroup>
-// 				</div>
-// 				<Divider orientation='vertical' />
-// 				<div className={styles.content}>
-// 					<Typography variant='h5'>Profile</Typography>
-// 					<Person />
-// 				</div>
-// 			</Toolbar>
-// 		</AppBar>
-// 	);
-// }
 
 export default Appbar;

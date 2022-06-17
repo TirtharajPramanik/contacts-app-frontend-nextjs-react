@@ -2,9 +2,10 @@ import { Login } from '../components/auth/Login';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import styles from '../styles/Login.module.css';
-import loginPage from '../assets/heroImages/loginPage.png';
 import { ArrowDownward } from '@mui/icons-material';
 import Link from 'next/link';
+
+const loginPage = '/assets/heroImages/loginPage.png';
 
 const LoginPage: NextPage = () => {
 	return (
@@ -16,6 +17,8 @@ const LoginPage: NextPage = () => {
 						className={styles.heroImage}
 						src={loginPage}
 						alt='hero image'
+						width={1000}
+						height={1000}
 					/>
 					<Link href='#login' aria-label='to login page'>
 						<a className={styles.link}>

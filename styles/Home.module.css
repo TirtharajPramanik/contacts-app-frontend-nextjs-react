@@ -21,8 +21,12 @@
 
 .appbar {
     top: 0;
-    background-color: var(--main-color);
+    background-color: #79DAE8;
     height: 3rem;
+}
+
+.toolbar {
+    background-color: #79DAE8;
 }
 
 .uname,
@@ -34,7 +38,6 @@
     font-family: 'Comfortaa', cursive;
     margin-top: -2rem;
     margin-left: 16rem;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 .email,
@@ -48,17 +51,17 @@
     margin: 0 auto;
 }
 
-.coverPic {
+.coverPicPaper {
     width: 100%;
     height: 30vh;
-    background-image: url(../assets/heroImages/loginPage.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 
-.appbarPic {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+.coverPic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .appbarProfile {
@@ -66,14 +69,39 @@
     align-items: center;
     justify-content: space-between;
     width: 10rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.avatar,
+.listAvatar,
+.appbarAvatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6rem;
+    margin-left: 3rem;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.listAvatar {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+}
+
+.appbarAvatar {
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
 }
 
 .profilePic {
-    width: 10rem;
-    height: 10rem;
-    margin-top: -6rem;
-    margin-left: 4rem;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px -10px 10px -10px;
 }
 
 .profile,
@@ -94,4 +122,12 @@
     width: fit-content;
     margin: 0;
     color: darkgray;
+}
+
+@media only screen and (max-width:400px) {
+
+    .listAvatar {
+        width: 4rem;
+        height: 4rem;
+    }
 }

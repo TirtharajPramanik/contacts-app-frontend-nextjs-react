@@ -1,6 +1,5 @@
 import { Email, Message, History } from '@mui/icons-material';
 import {
-	Avatar,
 	Divider,
 	IconButton,
 	ListItem,
@@ -11,18 +10,34 @@ import {
 	Tooltip,
 	Typography,
 } from '@mui/material';
+import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import ContactList from './ContactList';
+// import profilePic from '../../public/profilePic.jpeg';
+
+const profilePic = '/assets/heroImages/profilePic.jpeg';
+const coverPic = '/assets/heroImages/loginPage.png';
 
 function Profile() {
 	return (
 		<div className={styles.profile}>
-			<Paper className={styles.coverPic} />
-			<Avatar
-				className={styles.profilePic}
-				src='/profilePic.jpeg'
-				alt='profile pic'
-			/>
+			<Paper className={styles.coverPicPaper}>
+				<Image
+					className={styles.coverPic}
+					src={coverPic}
+					alt='cover pic'
+					layout='fill'
+				/>
+			</Paper>
+			<div className={styles.avatar}>
+				<Image
+					className={styles.profilePic}
+					src={profilePic}
+					alt='profile pic'
+					width={160}
+					height={160}
+				/>
+			</div>
 			<Typography className={styles.uname} variant='h5'>
 				@SanitaSingh
 			</Typography>
@@ -72,20 +87,5 @@ function Profile() {
 		</div>
 	);
 }
-// function MProfile() {
-// 	return (
-// 		<div className={styles.profile}>
-// 			<Paper className={styles.coverPic} />
-// 			<Avatar
-// 				className={styles.profilePic}
-// 				src='/profilePic.jpeg'
-// 				alt='profile pic'
-// 			/>
-// 			<Typography className={styles.uname} variant='h5'>
-// 				@SanitaSingh
-// 			</Typography>
-// 		</div>
-// 	);
-// }
 
 export default Profile;
