@@ -46,7 +46,7 @@
 }
 
 .loginPage {
-  background-image: url('../assets/backgroundImages/loginPage.svg');
+  background-image: url(/assets/backgroundImages/loginPage.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,22 +64,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-} */
 
 .link {
   color: #fafafa;
@@ -118,9 +102,60 @@
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+    padding: 1rem;
+  }
+
+  .loginPage {
+    height: 100%;
+  }
+
+  .line {
+    margin-top: 2rem;
+    width: 2rem;
+  }
+
+  .arrow,
+  .line {
+    display: block;
+    color: #fafafa;
+    margin: auto;
+  }
+
+  .title {
+    margin: -3rem;
+  }
+}
 
 
-/* 
+
+
+
+
+
+
+
+
+
+
+/* .footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+} 
+
 .grid {
   display: flex;
   align-items: center;
@@ -169,31 +204,5 @@
     width: 100%;
     flex-direction: column;
   }
-} */
-
-@media only screen and (max-width: 600px) {
-  .container {
-    display: block;
-    padding: 1rem;
-  }
-
-  .loginPage {
-    height: 100%;
-  }
-
-  .line {
-    margin-top: 2rem;
-    width: 2rem;
-  }
-
-  .arrow,
-  .line {
-    display: block;
-    color: #fafafa;
-    margin: auto;
-  }
-
-  .title {
-    margin: -3rem;
-  }
 }
+ */

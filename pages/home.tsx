@@ -3,11 +3,12 @@ import Contacts from '../components/home/Contacts';
 import Appbar from './../components/layout/Appbar';
 import { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
-import { useMediaQuery, useTheme, Divider } from '@mui/material';
+import { Divider } from '@mui/material';
+import { useContext } from 'react';
+import { context } from '../context/context';
 
 const HomePage: NextPage = () => {
-	const theme = useTheme();
-	const upMedium = useMediaQuery(theme.breakpoints.up('md'));
+	const { upMedium } = useContext(context);
 
 	return (
 		<>
