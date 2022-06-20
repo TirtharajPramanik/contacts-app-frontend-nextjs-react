@@ -21,12 +21,12 @@
 
 .appbar {
     top: 0;
-    background-color: #79DAE8;
+    background-color: var(--main-color);
     height: 3rem;
 }
 
 .toolbar {
-    background-color: #79DAE8;
+    background-color: var(--main-color);
 }
 
 .uname,
@@ -35,7 +35,7 @@
     font-style: italic;
     font-weight: 100;
     color: darkgrey;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
     margin-top: -2rem;
     margin-left: 16rem;
 }
@@ -69,7 +69,6 @@
     align-items: center;
     justify-content: space-between;
     width: 10rem;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 

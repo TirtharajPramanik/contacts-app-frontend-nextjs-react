@@ -13,10 +13,8 @@ import {
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import ContactList from './ContactList';
-// import profilePic from '../../public/profilePic.jpeg';
-
-const profilePic = '/assets/heroImages/profilePic.jpeg';
-const coverPic = '/assets/heroImages/loginPage.png';
+import profilePic from '../../assets/heroImages/profilePic.jpeg';
+import coverPic from '../../assets/heroImages/loginPage.png';
 
 function Profile() {
 	return (
@@ -26,7 +24,11 @@ function Profile() {
 					className={styles.coverPic}
 					src={coverPic}
 					alt='cover pic'
+					width={160}
+					height={160}
 					layout='fill'
+					placeholder='blur'
+					blurDataURL='/vercel.svg'
 				/>
 			</Paper>
 			<div className={styles.avatar}>
@@ -36,6 +38,8 @@ function Profile() {
 					alt='profile pic'
 					width={160}
 					height={160}
+					placeholder='blur'
+					blurDataURL='/vercel.svg'
 				/>
 			</div>
 			<Typography className={styles.uname} variant='h5'>

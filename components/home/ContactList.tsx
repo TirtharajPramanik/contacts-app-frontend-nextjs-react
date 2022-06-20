@@ -14,7 +14,7 @@ import Image from 'next/image';
 import { useContext } from 'react';
 import { context } from '../../context/context';
 import styles from '../../styles/Home.module.css';
-// import profilePic from '../../public/profilePic.jpeg';
+import profilePic from '../../assets/heroImages/profilePic.jpeg';
 
 function ListText() {
 	return (
@@ -84,10 +84,12 @@ function ContactItem() {
 					<div className={styles.listAvatar}>
 						<Image
 							className={styles.profilePic}
-							src='/profilePic.jpeg'
+							src={profilePic}
 							alt='profile pic'
 							width={160}
 							height={160}
+							placeholder='blur'
+							blurDataURL='/vercel.svg'
 						/>
 					</div>
 				</ListItemIcon>
@@ -115,7 +117,7 @@ function ContactItem() {
 
 const ContactList = () => {
 	let list = [];
-	for (let i = 0; i < 8; i++) {
+	for (let i = 0; i < 3; i++) {
 		list.push(<ContactItem key={i} />);
 	}
 	return <>{list}</>;
