@@ -1,17 +1,16 @@
 import '../styles/globals.css';
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import DefaultLayout from '../components/layout/DefaultLayout';
 import ContextProvider from '../context/context';
-import { CacheProvider } from '@emotion/react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { CacheProvider, EmotionCache } from '@emotion/react';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
 import createEmotionCache from '../utils/createEmotionCache';
 import lightTheme from '../styles/theme/lightTheme';
 
-type CustomAppProps = {
-	Component: any;
-	emotionCache: any;
-	pageProps: any;
-};
+interface CustomAppProps extends AppProps {
+	emotionCache?: EmotionCache;
+}
 
 const clientSideEmotionCache = createEmotionCache();
 

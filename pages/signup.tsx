@@ -4,8 +4,7 @@ import Image from 'next/image';
 import { ArrowDownward } from '@mui/icons-material';
 import styles from '../styles/Signup.module.css';
 import Link from 'next/link';
-
-const signupPage = '/assets/heroImages/signupPage.svg';
+import signupPage from '../assets/heroImages/signupPage.svg';
 
 const SignupPage: NextPage = () => {
 	return (
@@ -19,6 +18,8 @@ const SignupPage: NextPage = () => {
 						alt='hero image'
 						width={600}
 						height={600}
+						placeholder='blur'
+						blurDataURL='/vercel.svg'
 					/>
 					<Link href='#signup' aria-label='to signup page'>
 						<a className={styles.link}>
