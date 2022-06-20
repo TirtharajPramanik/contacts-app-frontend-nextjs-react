@@ -1,4 +1,4 @@
-#### This is a [Next.js](https://nextjs.org/) forntend Contacts app with SSR (Server Side Rendering) and material-ui.
+### This is a [Next.js](https://nextjs.org/) forntend Contacts app with SSR (Server Side Rendering) and [material-ui](https://mui.com).
 
 ## Preview Image
 
@@ -10,23 +10,17 @@
 
 ![home](demos/home.png)
 
-# Table of Content
+## Table of Content
 
+- [Preview Image](#preview-image)
+    - [Signup Demo](#signup-demo)
+    - [Home Demo](#home-demo)
 - [Table of Content](#table-of-content)
   - [1. Folder Structures](#1-folder-structures)
   - [2. Libraries & Frameworks](#2-libraries--frameworks)
   - [3. Installation & Set Up](#3-installation--set-up)
-  - [4. Demo Pictures](#4-demo-pictures)
-    - [Desktop Demos](#desktop-demos)
-      - [Login Demo](#login-demo)
-      - [Signup Demo](#signup-demo-1)
-      - [Home Demo](#home-demo-1)
-    - [Phone Demos](#phone-demos)
-      - [Login Demo](#login-demo-1)
-      - [Signup Demo](#signup-demo-2)
-      - [Home Demo](#home-demo-2)
 
-## 1. Folder Structures
+### 1. Folder Structures
 
 ```bash
 +---context
@@ -42,7 +36,7 @@
 +---utils
 ```
 
-## 2. Libraries & Frameworks
+### 2. Libraries & Frameworks
 
 | Name                                                | Description                                                                                                               |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +45,7 @@
 | [ContextApi](https://reactjs.org/docs/context.html) | Context provides a way to pass data through the component tree without having to pass props down manually at every level. |
 | [Material Ui](https://mui.com)                      | Material UI is a library of React UI components that implements Google's Material Design.                                 |
 
-## 3. Installation & Set Up
+### 3. Installation & Set Up
 
 1. Install project dependencies
 
@@ -78,37 +72,3 @@
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 4. Demo Pictures
-
-### Desktop Demos
-
-#### Login Demo
-
-![login](demos/login.png)
-
-#### Signup Demo
-
-![signup](demos/signup.png)
-
-#### Home Demo
-
-![home](demos/home.png)
-
-### Phone Demos
-
-#### Login Demo
-
-![login](demos/loginsm.png)
-
-![login form](demos/loginsmf.png)
-
-#### Signup Demo
-
-![signup](demos/signupsm.png)
-
-![signuap form](demos/signupsmf.png)
-
-#### Home Demo
-
-![home](demos/homesm.png)
